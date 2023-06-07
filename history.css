@@ -1,0 +1,135 @@
+body {
+    overflow-x: hidden;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 30%, blue 30%);
+}
+
+@font-face {
+    font-family: 'ClimateCrisisKR-1979';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/ClimateCrisisKR-1979.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css');
+@font-face {
+font-family: "Tossface";
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+src: url("./TossFaceFontMac.ttf") format("truetype");
+}
+
+a{
+    text-decoration: none;
+    color: transparent;
+}
+
+.loader {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0);
+}
+
+.loader .inner {
+    position: fixed;
+}
+
+.loader ul li {
+    list-style-type: none;
+    display: inline;
+    font-family: 'ClimateCrisisKR-1979';
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.2);
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 90 240 300' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='800' style='stroke: none; fill: rgb(255,255,255);' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none;'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.loader ul li:hover {
+    animation: wave 2s both linear;
+}
+
+@keyframes wave {
+    0% {
+        background-position: left 0px bottom -50px;
+    }
+
+    100% {
+        background-position: left 1500px bottom 0px;
+    }
+}
+#wrap {
+    position: relative;
+    width: 100%;
+}
+footer {
+    margin: 40px;
+	width: 100%;
+	height: 80px; /* 내용물에 따라 알맞는 값 설정 */
+	bottom: 70px;
+	position: absolute;
+}
+nav a {
+    font-family: 'Pretendard';
+    font-size: 18px;
+    color: white;
+    text-decoration-line: none;
+}
+p{
+    font-family: 'Pretendard';
+    opacity: 30%;
+    font-size: 14px;
+    color:white;
+}
+
+.text {
+    margin: 0 0 50px 500px;
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+}
+
+h1 {
+    margin-top: 98px;
+    color: white;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 26px;
+}
+
+h2 {
+    color: white;
+    font-family: "Tossface";
+    font-size: 50px;
+}
+h3 {
+    margin-top: 50px;
+    color: white;
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.text img{
+    width: 550px;
+    height: 300px;
+    border-radius: 30px;
+    mix-blend-mode: luminosity; 
+    opacity: 50%;
+}
+.text img:hover{
+    width: 550px;
+    border-radius: 30px;
+    mix-blend-mode:normal;
+    opacity: 100%;
+}

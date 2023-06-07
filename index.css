@@ -1,0 +1,61 @@
+body {
+    overflow-x: hidden;
+    background-image:url(img/main_bg.png);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'ClimateCrisisKR-1979';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/ClimateCrisisKR-1979.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: transparent;
+}
+
+.loader {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0);
+}
+
+.loader .inner {
+    position: fixed;
+}
+
+.loader ul li {
+    list-style-type: none;
+    display: inline;
+    font-family: 'ClimateCrisisKR-1979';
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.2);
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 90 240 300' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='800' style='stroke: none; fill: rgb(255,255,255);' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none;'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.loader ul li:hover {
+    animation: wave 2s both linear;
+}
+
+@keyframes wave {
+    0% {
+        background-position: left 0px bottom -50px;
+    }
+
+    100% {
+        background-position: left 1500px bottom 0px;
+    }
+}
